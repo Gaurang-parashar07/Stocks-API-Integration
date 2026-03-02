@@ -1,0 +1,103 @@
+.app {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #1e3c72;
+  align-items: center;
+}
+
+.container {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 20px;
+  color: #f5f7fb;
+}
+
+.search-form {
+  display: flex;
+  gap: 10px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.search-button {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  background-color: #2a5298;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-button:hover {
+  background-color: #1e3c72;
+}
+
+.card {
+  margin-top: 25px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #f8f9ff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.company-name {
+  margin-bottom: 15px;
+  color: #1e3c72;
+}
+
+.stock-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.stock-item {
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  color: black;
+  box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.stock-item span {
+  display: block;
+  font-size: 12px;
+  color: gray;
+}
+
+.stock-item strong {
+  font-size: 16px;
+}
+
+.timestamp {
+  margin-top: 15px;
+  font-size: 12px;
+  color: gray;
+}
+
+.loading {
+  margin-top: 15px;
+  color: #2a5298;
+}
+
+.error {
+  margin-top: 15px;
+  color: red;
+  font-weight: bold;
+}
