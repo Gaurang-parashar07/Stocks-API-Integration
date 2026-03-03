@@ -1,16 +1,76 @@
-# React + Vite
+#  Stock Search Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based Stock Search Dashboard that fetches real-time stock data using the Financial Modeling Prep (FMP) API.
 
-Currently, two official plugins are available:
+This project demonstrates API integration, state management, frontend caching, debounced search optimization, and clean component-based architecture.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Core Features
+- Search stock by symbol (e.g., AAPL, MSFT, GOOGL)
+- Display detailed stock information:
+  - Symbol
+  - Company Name
+  - Exchange
+  - Current Price
+  - Change & Change %
+  - Open & Previous Close
+  - Day High & Day Low
+  - 52 Week High & Low
+  - Volume
+  - Market Cap
+  - 50 & 200 Day Averages
+  - Last Updated Time
+- Loading state while fetching data
+- Error handling for failed API calls
 
-## Expanding the ESLint configuration
+---
+##  Additional Feature (Implemented Separately)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Navigation Bar
+- Added a reusable `Navbar` component
+- Clean top navigation layout
+- Improves UI structure and user experience
+---
+
+##  Bonus Feature (Optional Requirement)
+
+### Debounced Search Input
+- Implemented a custom `useDebounce` hook
+- Prevents excessive API calls while typing
+- Optimizes performance
+- Helps avoid API rate limits
+
+---
+
+##  Additional Feature (Implemented Separately)
+
+### Navigation Bar
+- Added a reusable `Navbar` component
+- Clean top navigation layout
+- Improves UI structure and user experience
+
+---
+
+##  Performance Optimization
+
+###  Frontend Caching
+- Implemented localStorage caching
+- Prevents repeated API calls for recently searched stocks
+- Improves speed and reduces API usage
+
+---
+
+##  Tech Stack
+
+- React (Functional Components + Hooks)
+- JavaScript (ES6+)
+- CSS (Custom Styling)
+- Financial Modeling Prep API
+- Vite
+
+---
+
+## 📁 Project Structure
