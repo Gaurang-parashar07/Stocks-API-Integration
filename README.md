@@ -73,4 +73,4 @@ This project demonstrates API integration, state management, frontend caching, d
 
 ---
 
-## 📁 Project Structure
+
